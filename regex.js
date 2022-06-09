@@ -29,9 +29,12 @@ numbers if there are more than one
 Expected Output: 
 ["555-123-4567", "555-567-8910"]
 
-*/ 
- 
-let phoneReg = /write your regex here/
+*/
+
+// let phoneReg = /^\+?[ 1-9][0-9]{7,14}$/
+// const phonNumber = "555-123-4567, 555-567-8910"
+// const answer = phonNumber.replace(phoneReg, '')
+// console.log(answer)
 
 /* 
 
@@ -49,9 +52,12 @@ Expected Output:
 ["lsouza@gmail.com"]
 - Note: Your terminal might also display the index, input, and groups of the match. If so, that's okay!
 
-*/ 
+*/
 
-let emailReg = /write your regex here/
+let emailReg = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/
+const emailAddress = "lsouza@gmail.com"
+const result = emailAddress.replace(emailReg, '')
+console.log(result)
 
 /* 
 
@@ -65,6 +71,6 @@ Regular Expression 3:
 Expected Output: 
 365
 
-*/ 
+*/
 
 let statusReg = /write your regex here/
